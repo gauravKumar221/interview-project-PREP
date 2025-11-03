@@ -37,8 +37,6 @@ async function fetchUsers() {
     }
 
     const users = await response.json();
-
-    // 🧩 Replace skeleton with real data
     tableBody.innerHTML = users.map(user => `
       <tr class="hover:bg-gray-50 transition">
         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${user.id}</td>
