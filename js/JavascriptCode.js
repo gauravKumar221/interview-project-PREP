@@ -29,6 +29,7 @@ async function fetchUsers() {
     </tr>
   `).join("");
 
+  
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
